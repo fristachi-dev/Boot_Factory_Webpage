@@ -244,6 +244,38 @@ $(document).ready(function () {
             "path": "assets/catalog/mens/accessories/rodrigo-bag.webp",
             "style": "misc bag"
         },
+        {
+            "name": "Superlite Womens No Show Socks",
+            "price": 19.99,
+            "color": "Multicolor",
+            "brand": "Adidas",
+            "path": "assets/catalog/womens/accessories/noshow-socks.webp",
+            "style": "misc sock"
+        },
+        {
+            "name": "Solid Womens No Show Socks",
+            "price": 14.99,
+            "color": "Black",
+            "brand": "Mix No. 6",
+            "path": "assets/catalog/womens/accessories/mix6-socks.webp",
+            "style": "misc sock"
+        },
+        {
+            "name": "Zenawien Satchel",
+            "price": 69.99,
+            "color": "Light Brown",
+            "brand": "Aldo",
+            "path": "assets/catalog/womens/accessories/zenawien-bag.webp",
+            "style": "misc bag"
+        },
+        {
+            "name": "Kimmie Crossbody Bag",
+            "price": 39.99,
+            "color": "Grey",
+            "brand": "Violet Ray",
+            "path": "assets/catalog/womens/accessories/kimmie-bag.webp",
+            "style": "misc bag"
+        },
 
     ]
 

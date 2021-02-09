@@ -397,6 +397,10 @@ nav:hover {
   color: #000 !important;
 }
 
+.sections section {
+  margin: 0 auto;
+}
+
 .sections .section-1 {
   background-image: url(../assets/banner8.png);
   min-height: 100vh;
@@ -627,6 +631,10 @@ nav:hover {
   opacity: 1;
 }
 
+.item3, .item4 {
+  pointer-events: none !important;
+}
+
 footer {
   background: #383838;
 }
@@ -637,8 +645,10 @@ footer .footer-container {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-top: 25px;
-  margin-bottom: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 25px auto 10px;
+  position: relative;
 }
 
 footer .footer-container .footer-item ul {
@@ -722,7 +732,9 @@ footer .footer-container .footer-item .footer-form .btn-join:hover {
 }
 
 footer .footer-container .flex {
-  width: 200px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 footer .footer-footer {
@@ -786,57 +798,89 @@ div:active > .underline:after {
   width: 100%;
 }
 
-@media only screen and (min-width: 1000px) {
-  .mobile-menu {
+@media only screen and (max-width: 1100px) {
+  .width {
+    width: 100%;
+  }
+  nav .logo {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  nav .nav-list .nav-about, nav .nav-list .nav-help {
     display: none !important;
   }
-}
-
-@media only screen and (max-width: 1400px) {
-  .nav-wrapper ul li {
-    margin-left: 25px !important;
-    font-size: 14px;
+  .section-1-wrapper .banner-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section-2-wrapper .underline {
+    font-size: 30px !important;
+  }
+  .footer-container {
+    width: 95% !important;
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 650px) {
+  .width {
+    width: 95%;
+  }
   .menu-button {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
+  }
+  nav {
+    padding: 0 10px;
+  }
+  nav .menu-button {
+    height: 80px;
   }
   nav .nav-list {
     display: none;
   }
   nav .logo {
     line-height: initial;
-    font-size: 24px;
-    padding-top: 20px;
+    font-size: 26px;
+    padding-top: 25px;
   }
   nav .logo p {
     float: unset;
   }
-  .grid-container .item1 {
+  .section-1-wrapper .banner-wrapper {
+    margin-top: 100px;
+  }
+  .section-1-wrapper .banner-wrapper h1 {
+    font-size: 40px;
+  }
+  .section-1-wrapper .banner-btn div {
+    float: none !important;
+    margin: 20px auto;
+  }
+  .section-2-wrapper {
+    padding: 0 10px !important;
+  }
+  .section-2-wrapper .grid-container .item1 {
     -ms-grid-column: 1 !important;
         grid-column-start: 1 !important;
     grid-column-end: 7 !important;
   }
-  .grid-container .item2 {
+  .section-2-wrapper .grid-container .item2 {
     -ms-grid-column: 1 !important;
         grid-column-start: 1 !important;
     grid-column-end: 7 !important;
   }
-  .grid-container .item3 {
+  .section-2-wrapper .grid-container .item3 {
     -ms-grid-column: 1;
         grid-column-start: 1;
     grid-column-end: 7;
   }
-  .grid-container .item4 {
+  .section-2-wrapper .grid-container .item4 {
     -ms-grid-column: 1;
         grid-column-start: 1;
     grid-column-end: 7;
   }
-  .grid-container .item5 {
+  .section-2-wrapper .grid-container .item5 {
     -ms-grid-column: 1;
         grid-column-start: 1;
     grid-column-end: 7;
@@ -844,29 +888,11 @@ div:active > .underline:after {
   .banner-img-wrapper {
     display: none;
   }
-}
-
-@media only screen and (max-width: 1200px) {
-  .section-1-wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  footer .item-left {
+    margin-left: 20px;
   }
-  .footer-wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .btn-case {
-    margin: 20px auto 0;
-  }
-  .footer-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  footer .footer-item {
+    margin-top: 10px;
   }
 }
 

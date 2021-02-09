@@ -253,6 +253,38 @@ $(document).ready(function () {
             "path": "assets/catalog/mens/kezar-boot/0.webp",
             "style": "lace"
         },
+        {
+            "name": "Superlite Womens No Show Socks",
+            "price": 19.99,
+            "color": "Multicolor",
+            "brand": "Adidas",
+            "path": "assets/catalog/womens/accessories/noshow-socks.webp",
+            "style": "misc sock"
+        },
+        {
+            "name": "Solid Womens No Show Socks",
+            "price": 14.99,
+            "color": "Black",
+            "brand": "Mix No. 6",
+            "path": "assets/catalog/womens/accessories/mix6-socks.webp",
+            "style": "misc sock"
+        },
+        {
+            "name": "Zenawien Satchel",
+            "price": 69.99,
+            "color": "Light Brown",
+            "brand": "Aldo",
+            "path": "assets/catalog/womens/accessories/zenawien-bag.webp",
+            "style": "misc bag"
+        },
+        {
+            "name": "Kimmie Crossbody Bag",
+            "price": 39.99,
+            "color": "Grey",
+            "brand": "Violet Ray",
+            "path": "assets/catalog/womens/accessories/kimmie-bag.webp",
+            "style": "misc bag"
+        },
 
     ]
 
@@ -305,6 +337,38 @@ $(document).ready(function () {
             "path": "assets/catalog/mens/accessories/rodrigo-bag.webp",
             "style": "misc bag"
         },
+        {
+            "name": "Superlite Womens No Show Socks",
+            "price": 19.99,
+            "color": "Multicolor",
+            "brand": "Adidas",
+            "path": "assets/catalog/womens/accessories/noshow-socks.webp",
+            "style": "misc sock"
+        },
+        {
+            "name": "Solid Womens No Show Socks",
+            "price": 14.99,
+            "color": "Black",
+            "brand": "Mix No. 6",
+            "path": "assets/catalog/womens/accessories/mix6-socks.webp",
+            "style": "misc sock"
+        },
+        {
+            "name": "Zenawien Satchel",
+            "price": 69.99,
+            "color": "Light Brown",
+            "brand": "Aldo",
+            "path": "assets/catalog/womens/accessories/zenawien-bag.webp",
+            "style": "misc bag"
+        },
+        {
+            "name": "Kimmie Crossbody Bag",
+            "price": 39.99,
+            "color": "Grey",
+            "brand": "Violet Ray",
+            "path": "assets/catalog/womens/accessories/kimmie-bag.webp",
+            "style": "misc bag"
+        },
     ]
 
     let arr = [];
@@ -348,13 +412,13 @@ $(document).ready(function () {
 
         $('.cat-ul').append(
             `
-            <li class="item ` + catalog[i].style + ` ` + catalog[i].color + `">
-                <img src=` + catalog[i].path + `>
+            <li class="item ${catalog[i].style} ${catalog[i].color}">
+                <img src=${catalog[i].path}>
                 <div>
-                    <span class="value">` + catalog[i].name + `</span>
-                    <span class="right">` + catalog[i].price + `</span>
+                    <span class="value">${catalog[i].name}</span>
+                    <span class="top-price right">${catalog[i].price}</span>
                 </div>
-                <p>` + catalog[i].color + `</p>
+                <p>${catalog[i].color} <span class="bot-price black right">${catalog[i].price}</span></p>
             </li>
             `
         );
